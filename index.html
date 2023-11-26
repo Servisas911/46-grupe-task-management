@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task management</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/todo.css">
+    <link rel="stylesheet" href="./css/aside.css">
+    <link rel="stylesheet" href="./css/form.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="logo">Task-46</div>
+        <button id="add_task" class="btn">Add task</button>
+    </header>
+
+    <main class="main-content">
+        <section id="kanban"></section>
+        <aside id="aside" class="aside">
+            <div class="aside-bg"></div>
+            <div class="aside-container">
+                <header class="aside-header">
+                    <h2 class="aside-title">Add task</h2>
+                    <button type="button" class="fa fa-times"></button>
+                </header>
+                <div class="aside-content">
+                    <form id="task_form" class="form">
+                        <div class="form-row">
+                            <label class="label" for="title">Title</label>
+                            <input id="title" class="input" type="text" name="title" required>
+                        </div>
+                        <div class="form-row">
+                            <label class="label" for="desc">Description</label>
+                            <textarea id="desc" class="textarea" name="description"></textarea>
+                        </div>
+                        <div class="form-row">
+                            <label class="label" for="deadline">Deadline</label>
+                            <input id="deadline" class="input" type="text" name="deadline">
+                        </div>
+                        <div class="form-row">
+                            <label class="label" for="tags">Tags</label>
+                            <input id="tags" class="input" type="text" name="tags">
+                        </div>
+                        <div class="form-row">
+                            <button class="btn" type="submit">Create task</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="main-footer">
+        Copyright 2023
+    </footer>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
